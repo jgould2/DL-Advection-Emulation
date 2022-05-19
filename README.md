@@ -8,4 +8,4 @@ Numerical Solutions: provided by Clawpack:
   
 Deep Learning Models: Fully Convolutional Network, Autoencoder, Unet, new model type  
 Recurrent Versions with Time Integration: Lax-Wendroff  
-Custom Loss: PINN with numericalflux calculation and/or automatic differentiation  
+Custom Loss: PINN with numerical flux calculation and/or automatic differentiation  
