@@ -104,7 +104,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'unet5'
 model = unet.model5()
-directory = directory_base + 'Unet/' + name +'_logs'
+directory = directory_base + 'Unet/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -117,7 +117,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'unet6'
 model = unet.model6()
-directory = directory_base + 'Unet/' + name +'_logs'
+directory = directory_base + 'Unet/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -134,7 +134,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'ae4'
 model = auto_encoder.model4()
-directory = directory_base + 'Autoencoder/' + name +'_logs'
+directory = directory_base + 'Autoencoder/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -147,7 +147,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'ae5'
 model = auto_encoder.model5()
-directory = directory_base + 'Autoencoder/' + name +'_logs'
+directory = directory_base + 'Autoencoder/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -160,7 +160,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'ae6'
 model = auto_encoder.model6()
-directory = directory_base + 'Autoencoder/' + name +'_logs'
+directory = directory_base + 'Autoencoder/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -177,7 +177,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_n4'
 model = fcn_n.model4()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -190,7 +190,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_n5'
 model = fcn_n.model5()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -203,7 +203,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_n6'
 model = fcn_n.model6()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -220,7 +220,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_w4'
 model = fcn_w.model4()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -233,7 +233,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_w5'
 model = fcn_w.model5()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -246,7 +246,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_w6'
 model = fcn_w.model6()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -263,7 +263,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_s4'
 model = fcn_n.model4
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -276,7 +276,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_s5'
 model = fcn_n.model5()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
@@ -289,7 +289,7 @@ model.save(directory)
 #********************************************************************************************************************
 name = 'fcn_s6'
 model = fcn_n.model6()
-directory = directory_base + 'FCN/' + name +'_logs'
+directory = directory_base + 'FCN/' + name
 callbacks = [ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, min_lr=1e-7),
              EarlyStopping(monitor='val_loss', patience=15),
              TensorBoard(log_dir=directory+'_logs', update_freq='epoch')]
