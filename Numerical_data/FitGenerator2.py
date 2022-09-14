@@ -189,7 +189,7 @@ exit()
 unet1 = Unet_base.model4()
 unet2 = Unet_base.model5()
 unet3 = Unet_base.model6()
-import tensorflow._api.v2.config
+
 fcn_n1 = FCN_narrow.model4()
 fcn_n2 = FCN_narrow.model5()
 fcn_n3 = FCN_narrow.model6()
