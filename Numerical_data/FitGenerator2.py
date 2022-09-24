@@ -48,7 +48,7 @@ class DataGenerator(keras.utils.Sequence):
         for i, ID in enumerate(list_IDs_temp):
             data = np.load(self.dir + 'ex_'+str(ID)+'.npy')
             data[:, :, 1] = data[:, :, 1] / self.dim[0]
-            data[:, :, 1] = data[:, :, 2] / self.dim[1]
+            data[:, :, 2] = data[:, :, 2] / self.dim[1]
             x[i] = data[:, :, :-1]
             y[i] = data[:, :, [-1]]
         return x, y
